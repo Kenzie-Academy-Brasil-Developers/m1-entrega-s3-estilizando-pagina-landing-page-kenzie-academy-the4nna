@@ -36,9 +36,17 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Lato;
     list-style: none;
 }
+
+h2 {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img{
     max-width: 800px;
 }
@@ -54,24 +62,91 @@ div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    display: flex;
 }
 div.container{
     width: 100%;
     max-width: 1140px;
     margin:0 auto;
 }
-/* GERAL */
-  
+
+div.large-container img {
+    width: 50px;
+}
+div.large-container figcaption {
+    color: #00043e;
+}
+
+div.large-container ul li a {
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: #ffffff; 
+    text-decoration: none;
+    letter-spacing: 1.6px;
+    
+}
+.secaoDestaque {
+    background-image: url(/assets/img/background-destaque.webp);
+    padding: 10%;
+}
+
+section.secaoDestaque h2 {
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    font-size: 63px;
+    font-weight: normal;
+    text-align: center;
+}
+
+section.secaoDestaque p {
+    font-size: 21px;
+    font-family: 'Lato';
+    color: #FFFFFF;
+    text-align: center;
+}
+
+div.secaoDestaqueFormulario {
+    margin-top: 30px;
+}
+div.secaoDestaqueFormulario input {
+    padding: 5px;
+    width: 400px;
+    border-radius: 2px;
+    border: 1px solid #007aff;
+    margin-right: -4px;
+}
+div.secaoDestaqueFormulario button {
+    padding: 5.5px;
+    font-size: 14px;
+    background-color: #007aff;
+    color: #ffffff;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+}
 /* HTML */
 html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    background-color: #ffffff;
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    background-color: #00043e; 
+    height: 60px;
+}
+
+nav {
+   
+}
+
+
+
 /* HEADER */
   
 /* FOOTER */
@@ -79,7 +154,9 @@ footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+main{
+    
+}
 /* INICIAL */
 
 /* EXTRAS */

@@ -36,12 +36,18 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Lato;
     list-style: none;
 }
-img{
-    max-width: 800px;
+
+h2 {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
 div.flex{
     display: flex;
 }
@@ -54,32 +60,216 @@ div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    display: flex;
 }
 div.container{
     width: 100%;
     max-width: 1140px;
     margin:0 auto;
 }
-/* GERAL */
-  
+
+div.large-container img {
+    width: 50px;
+}
+div.large-container figcaption {
+    color: #00043e;
+}
+
+div.large-container ul li a {
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: #ffffff; 
+    text-decoration: none;
+    letter-spacing: 1.6px;
+    
+}
+.secaoDestaque {
+    background-image: url(/assets/img/background-destaque.webp);
+    padding: 10%;
+    background-size: cover;
+}
+
+section.secaoDestaque h2 {
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    font-size: 63px;
+    font-weight: normal;
+    text-align: center;
+}
+
+section.secaoDestaque p {
+    font-size: 21px;
+    font-family: 'Lato';
+    color: #FFFFFF;
+    text-align: center;
+}
+
+div.secaoDestaqueFormulario {
+    margin-top: 30px;
+}
+div.secaoDestaqueFormulario input {
+    padding: 5px;
+    width: 400px;
+    border-radius: 2px;
+    border: 1px solid #007aff;
+    margin-right: -4px;
+}
+div.secaoDestaqueFormulario button {
+    padding: 5.5px;
+    font-size: 14px;
+    background-color: #007aff;
+    color: #ffffff;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+section.secaoSobre {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+div.flex-col {
+    max-width: 550px;
+}
+
+div.flex-col h2 {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #303030;
+}
+
+div.flex-col p {
+    font-family: 'Lato';
+    font-size: 19px;
+    color: #303030;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+div.flex-col span {
+    font-family: 'Lato';
+    font-size: 19px;
+    color: #818181; 
+}
+
+div.flex-col button{
+    color: #303030;
+    background-color: #FFFFFF;
+    border: 1px solid #818181;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+div.flex-col img {
+    max-width: 320px;
+}
+
+div.flex-col figcaption {
+    color: #FFFFFF;
+}
+
+div.flex-col ul {
+    margin-top: 60px;
+}
+
+div.flex-col ul li {
+    color: #818181; 
+    font-size: 19px;
+    font-family: 'Lato';
+    list-style-type: disc;
+    
+}
+
+div.flex-col2 {
+    background-color: #f6f6f6;
+    margin-left: -25%;
+    margin-right: -25%;
+    padding: 50px;
+    color: #f6f6f6;
+}
+
+div.flex-col2 img {
+    max-width: 120px;
+}
+
+section.secaoCursos {
+    margin-top: 50px;
+}
+
+section.secaoCursos h2 {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #303030; 
+
+}
+
+
+
+section.secaoCursos h3 {
+    font-family: 'Lato';
+    font-size: 19px;
+    color: #303030; 
+}
+
+section.secaoCursos p {
+    font-size: 15px;
+    color: #818181;
+}
+
+section.secaoCursos ul li img {
+    max-width: 80px;
+}
 /* HTML */
 html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    background-color: #ffffff;
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    background-color: #00043e; 
+    height: 60px;
+}
+
+nav {
+   
+}
+
+
+
 /* HEADER */
   
 /* FOOTER */
-footer{}
+footer{
+
+}
+
+footer img {
+    max-width: 20px;
+   
+}
+
+footer p {
+    color: #818181;
+
+}
+
+footer p a {
+    color: #007aff;
+    text-decoration: none;
+}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+main{
+    
+}
 /* INICIAL */
 
 /* EXTRAS */

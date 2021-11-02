@@ -61,6 +61,7 @@ div.large-container{
     max-width: 1170px;
     margin:0 auto;
     display: flex;
+    justify-content: space-around
 }
 div.container{
     width: 100%;
@@ -106,6 +107,8 @@ section.secaoDestaque p {
 
 div.secaoDestaqueFormulario {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 div.secaoDestaqueFormulario input {
     padding: 5px;
@@ -126,6 +129,8 @@ div.secaoDestaqueFormulario button {
 section.secaoSobre {
     margin-top: 5%;
     margin-left: 20%;
+    display: inline-block;
+    justify-content: center;
 }
 
 div.flex-col {
@@ -202,7 +207,7 @@ section.secaoCursos h2 {
     font-size: 24px;
     font-family: 'Montserrat';
     color: #303030; 
-
+    text-align: center;
 }
 
 
@@ -216,6 +221,11 @@ section.secaoCursos h3 {
 section.secaoCursos p {
     font-size: 15px;
     color: #818181;
+}
+
+.pCurso{
+    text-align: center;
+    margin: 15px;
 }
 
 section.secaoCursos ul li img {
@@ -237,8 +247,34 @@ header{
     height: 60px;
 }
 
-nav {
-   
+
+/* Mudanças posicionamento */
+
+.large-container li {
+    display: inline;
+    text-align: right;
+    margin: 10px
+}
+
+.secaoCursos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoCursos article ul{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: flex-start;
+    
+}
+.secaoCursos li{
+    width: 33.333%;
+    height: 50%;
 }
 
 
@@ -247,7 +283,7 @@ nav {
   
 /* FOOTER */
 footer{
-
+    text-align: center;
 }
 
 footer img {

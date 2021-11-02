@@ -47,9 +47,7 @@ h2 {
     box-sizing: border-box;
 }
 
-img{
-    max-width: 800px;
-}
+
 div.flex{
     display: flex;
 }
@@ -88,6 +86,7 @@ div.large-container ul li a {
 .secaoDestaque {
     background-image: url(/assets/img/background-destaque.webp);
     padding: 10%;
+    background-size: cover;
 }
 
 section.secaoDestaque h2 {
@@ -124,6 +123,103 @@ div.secaoDestaqueFormulario button {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+section.secaoSobre {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+div.flex-col {
+    max-width: 550px;
+}
+
+div.flex-col h2 {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #303030;
+}
+
+div.flex-col p {
+    font-family: 'Lato';
+    font-size: 19px;
+    color: #303030;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+div.flex-col span {
+    font-family: 'Lato';
+    font-size: 19px;
+    color: #818181; 
+}
+
+div.flex-col button{
+    color: #303030;
+    background-color: #FFFFFF;
+    border: 1px solid #818181;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+div.flex-col img {
+    max-width: 320px;
+}
+
+div.flex-col figcaption {
+    color: #FFFFFF;
+}
+
+div.flex-col ul {
+    margin-top: 60px;
+}
+
+div.flex-col ul li {
+    color: #818181; 
+    font-size: 19px;
+    font-family: 'Lato';
+    list-style-type: disc;
+    
+}
+
+div.flex-col2 {
+    background-color: #f6f6f6;
+    margin-left: -25%;
+    margin-right: -25%;
+    padding: 50px;
+    color: #f6f6f6;
+}
+
+div.flex-col2 img {
+    max-width: 120px;
+}
+
+section.secaoCursos {
+    margin-top: 50px;
+}
+
+section.secaoCursos h2 {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #303030; 
+
+}
+
+
+
+section.secaoCursos h3 {
+    font-family: 'Lato';
+    font-size: 19px;
+    color: #303030; 
+}
+
+section.secaoCursos p {
+    font-size: 15px;
+    color: #818181;
+}
+
+section.secaoCursos ul li img {
+    max-width: 80px;
 }
 /* HTML */
 html{}
@@ -150,7 +246,24 @@ nav {
 /* HEADER */
   
 /* FOOTER */
-footer{}
+footer{
+
+}
+
+footer img {
+    max-width: 20px;
+   
+}
+
+footer p {
+    color: #818181;
+
+}
+
+footer p a {
+    color: #007aff;
+    text-decoration: none;
+}
 /* FOOTER */
 
 /* INICIAL */

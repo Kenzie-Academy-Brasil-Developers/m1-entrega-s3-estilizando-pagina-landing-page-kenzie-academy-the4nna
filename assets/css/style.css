@@ -48,9 +48,7 @@ h2 {
 }
 
 
-.flex{
-    display: inline-block;
-}
+
 div.full-container{
     width: 100%;
     max-width: 1850px;
@@ -280,6 +278,10 @@ header{
     height: 50%;
 }
 
+.flex{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* HEADER */

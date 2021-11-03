@@ -82,8 +82,8 @@ div.large-container ul li a {
     letter-spacing: 1.6px;
     
 }
-.secaoDestaque {
-    background-image: url(./assets/img/background-destaque.webp);
+section.secaoDestaque {
+    background-image: url("../img/background-destaque.webp");
     padding: 10%;
     background-size: cover;
 }

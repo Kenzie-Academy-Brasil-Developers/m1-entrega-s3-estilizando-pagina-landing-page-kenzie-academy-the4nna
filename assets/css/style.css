@@ -127,6 +127,7 @@ div.secaoDestaqueFormulario button {
 section.secaoSobre {
     margin-top: 5%;
     margin-left: 20%;
+    width: 80%;
     display: inline-block;
     justify-content: center;
 }
@@ -188,9 +189,10 @@ div.flex-col2 ul li {
 
 div.flex-col2 {
     background-color: #f6f6f6;
-    margin-left: -25%;
-    margin-right: -25%;
+    /* margin-left: -25%;
+    margin-right: -25%; */
     padding: 50px;
+    height: 300px;
 }
 
 div.flex-col2 img {
@@ -279,9 +281,14 @@ header{
 }
 
 .flex{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 /* HEADER */

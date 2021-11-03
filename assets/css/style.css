@@ -83,7 +83,7 @@ div.large-container ul li a {
     
 }
 .secaoDestaque {
-    background-image: url(/assets/img/background-destaque.webp);
+    background-image: url(./assets/img/background-destaque.webp);
     padding: 10%;
     background-size: cover;
 }

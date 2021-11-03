@@ -48,8 +48,8 @@ h2 {
 }
 
 
-div.flex{
-    display: flex;
+.flex{
+    display: inline-block;
 }
 div.full-container{
     width: 100%;
@@ -175,15 +175,16 @@ div.flex-col figcaption {
     color: #FFFFFF;
 }
 
-div.flex-col ul {
+div.flex-col2 ul {
     margin-top: 60px;
 }
 
-div.flex-col ul li {
+div.flex-col2 ul li {
     color: #818181; 
     font-size: 19px;
     font-family: 'Lato';
     list-style-type: disc;
+
     
 }
 
@@ -192,11 +193,13 @@ div.flex-col2 {
     margin-left: -25%;
     margin-right: -25%;
     padding: 50px;
-    color: #f6f6f6;
 }
 
 div.flex-col2 img {
     max-width: 120px;
+}
+.flex-col2 figcaption{
+    opacity: 0;
 }
 
 section.secaoCursos {

@@ -48,9 +48,7 @@ h2 {
 }
 
 
-div.flex{
-    display: flex;
-}
+
 div.full-container{
     width: 100%;
     max-width: 1850px;
@@ -61,6 +59,7 @@ div.large-container{
     max-width: 1170px;
     margin:0 auto;
     display: flex;
+    justify-content: space-around
 }
 div.container{
     width: 100%;
@@ -84,7 +83,7 @@ div.large-container ul li a {
     
 }
 .secaoDestaque {
-    background-image: url(/assets/img/background-destaque.webp);
+    background-image: url(./assets/img/background-destaque.webp);
     padding: 10%;
     background-size: cover;
 }
@@ -106,6 +105,8 @@ section.secaoDestaque p {
 
 div.secaoDestaqueFormulario {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 div.secaoDestaqueFormulario input {
     padding: 5px;
@@ -126,6 +127,9 @@ div.secaoDestaqueFormulario button {
 section.secaoSobre {
     margin-top: 5%;
     margin-left: 20%;
+    width: 70%;
+    display: inline-block;
+    justify-content: center;
 }
 
 div.flex-col {
@@ -152,6 +156,11 @@ div.flex-col span {
     font-size: 19px;
     color: #818181; 
 }
+.flex-col span::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
 
 div.flex-col button{
     color: #303030;
@@ -162,6 +171,12 @@ div.flex-col button{
     font-size: 14px;
 }
 
+div.flex-col button:hover {
+    background-color: #007aff;
+    color: white;
+    border: 1px solid #007aff;
+    transition: all 0.5s ease-in;
+}
 div.flex-col img {
     max-width: 320px;
 }
@@ -170,28 +185,32 @@ div.flex-col figcaption {
     color: #FFFFFF;
 }
 
-div.flex-col ul {
+div.flex-col2 ul {
     margin-top: 60px;
 }
 
-div.flex-col ul li {
+div.flex-col2 ul li {
     color: #818181; 
     font-size: 19px;
     font-family: 'Lato';
     list-style-type: disc;
+
     
 }
 
 div.flex-col2 {
     background-color: #f6f6f6;
-    margin-left: -25%;
-    margin-right: -25%;
+    /* margin-left: -25%;
+    margin-right: -25%; */
     padding: 50px;
-    color: #f6f6f6;
+    height: 300px;
 }
 
 div.flex-col2 img {
     max-width: 120px;
+}
+.flex-col2 figcaption{
+    opacity: 0;
 }
 
 section.secaoCursos {
@@ -202,7 +221,7 @@ section.secaoCursos h2 {
     font-size: 24px;
     font-family: 'Montserrat';
     color: #303030; 
-
+    text-align: center;
 }
 
 
@@ -216,6 +235,11 @@ section.secaoCursos h3 {
 section.secaoCursos p {
     font-size: 15px;
     color: #818181;
+}
+
+.pCurso{
+    text-align: center;
+    margin: 15px;
 }
 
 section.secaoCursos ul li img {
@@ -237,8 +261,43 @@ header{
     height: 60px;
 }
 
-nav {
-   
+
+/* Mudanças posicionamento */
+
+.large-container li {
+    display: inline;
+    text-align: right;
+    margin: 10px
+}
+
+.secaoCursos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoCursos article ul{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: flex-start;
+    
+}
+.secaoCursos li{
+    width: 33.333%;
+    height: 50%;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -247,12 +306,17 @@ nav {
   
 /* FOOTER */
 footer{
-
+    text-align: center;
 }
 
 footer img {
     max-width: 20px;
    
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 footer p {
@@ -275,13 +339,27 @@ main{
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track-piece {
+    background-color: #FFFFFF;
+    border-left: 1px solid #FFFFFF; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(212, 235, 243)
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #007aff;
+}
+
 
 /* EXTRAS */
   
